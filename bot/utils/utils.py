@@ -154,9 +154,9 @@ async def display_settings(c, m, cb=False):
     
     
     if as_file:
-        as_file_btn.append(InlineKeyboardButton("📁 Uploading as Document.", 'set+af'))
+        as_file_btn.append(InlineKeyboardButton("📁 Uploading as Document", 'set+af'))
     else:
-        as_file_btn.append(InlineKeyboardButton("🖼️ Uploading as Image.", 'set+af'))
+        as_file_btn.append(InlineKeyboardButton("🖼️ Uploading as Image", 'set+af'))
     
     if watermark_text:
         wm_btn.append(InlineKeyboardButton(f"{watermark_text}", 'set+wm'))
