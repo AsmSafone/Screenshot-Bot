@@ -4,7 +4,7 @@ from ..config import Config
 from ..screenshotbot import ScreenShotBot
 from ..utils import display_settings
 
-UPDATES_CHANNEL = 'Discovery_Updates'
+UPDATES_CHANNEL = 'MediQBank'
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant, UsernameNotOccupied, ChatAdminRequired, PeerIdInvalid
 
 @ScreenShotBot.on_message(Filters.private & Filters.command("settings"))
@@ -17,7 +17,7 @@ async def start(c, m):
             if user.status == "kicked":
                 await c.send_message(
                    chat_id=m.chat.id,
-                   text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+                   text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/safothebot).",
                    parse_mode="markdown",
                    disable_web_page_preview=True
                 )
@@ -25,7 +25,7 @@ async def start(c, m):
         except UserNotParticipant:
             await c.send_message(
                 chat_id=m.chat.id,
-                text="**Please Join My Updates Channel to use this Bot!**",
+                text="**Hey, \nPlease Join My Updates Channel To Use This Bot!**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -39,7 +39,7 @@ async def start(c, m):
         except Exception:
             await c.send_message(
                 chat_id=m.chat.id,
-                text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
+                text="Something went Wrong. Contact my [Support Group](https://t.me/safothebot).",
                 parse_mode="markdown",
                 disable_web_page_preview=True)
             return
