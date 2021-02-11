@@ -149,7 +149,7 @@ async def display_settings(c, m, cb=False):
         InlineKeyboardButton(f"{Config.FONT_SIZES_NAME[font_size]}", 'set+fs')
     ]
     as_file_btn = [InlineKeyboardButton("Upload Mode", 'rj')]
-    wm_btn = [InlineKeyboardButton("Watermark", 'rj')]
+    wm_btn = [InlineKeyboardButton("Watermark Text", 'rj')]
     sm_btn = [InlineKeyboardButton("Screenshot Generation Mode", 'rj')]
     
     
@@ -709,5 +709,5 @@ def gen_ik_buttons():
         if i==10:
             btns.append(i_keyboard)
     btns.append([InlineKeyboardButton('Manual Screenshots!', 'mscht')])
-    btns.append([InlineKeyboardButton('Trim Video!', 'trim')])
+    btns.append([InlineKeyboardButton('Trim This Video!', 'trim')])
     return btns
