@@ -6,8 +6,8 @@ UPDATES_CHANNEL = 'MediQBank'
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant, UsernameNotOccupied, ChatAdminRequired, PeerIdInvalid
 
 HELP_TEXT = """
-Hi {}
-This is S1 Screenshot BOT. You can use me to generate:
+Hey Dear {},
+This is S1 Screenshot BOT. You Can Use Me To Generate:
 
     1. Screenshots.
     2. Sample Video.
