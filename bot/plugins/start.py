@@ -58,7 +58,7 @@ async def start(c, m):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('Updates', url='https://t.me/joinchat/safoneyt'),
+                    InlineKeyboardButton('Updates', url='https://t.me/safoneyt'),
                     InlineKeyboardButton('Developer', url='https://t.me/I_Am_Only_One_1')
                 ],
                 [
